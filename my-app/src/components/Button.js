@@ -3,7 +3,7 @@ import './Button.css'
 
 const STYLES = ['btn-primary', 'btn-outline']
 const SIZES = ['btn-medium', 'btn-large']
-const COLORS = ['btn-blue', 'btn-darkblue', 'btn-lightpink']
+const COLORS = ['btn-blue', 'btn-darkblue', 'btn-lightpink', 'btn-lilac']
 export const Button = ({
   text,
   color,
@@ -11,6 +11,7 @@ export const Button = ({
   onClick,
   buttonStyle,
   buttonSize,
+  icon,
 }) => {
   const checkButtonStyle = STYLES.includes(buttonStyle)
     ? buttonStyle
@@ -26,6 +27,7 @@ export const Button = ({
         onClick={onClick}
         type={checkType}
       >
+        <i className={icon ? icon : null} />
         {text}
       </button>
     </>
