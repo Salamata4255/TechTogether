@@ -1,32 +1,24 @@
-import React from 'react'
-import './App.css'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Home from './components/pages/Home'
-import Login from './components/pages/Login'
+import React, { useState } from 'react'
+import TodoItem from '../TodoItem'
+import NewTask from '../NewTask'
+import './Home.css'
+import Navbar from '../Navbar'
 
-function App() {
-  return (
-    <>
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/login">
-            <Login />
-          </Route>
-        </Switch>
-      </Router>
-    </>
-  )
-}
-
-/* function App() {
+function Home() {
   const holder = [
     { task: 'Learn React', isCompleted: false },
     { task: 'Learn CSS', isCompleted: false },
     { task: 'Read a book', isCompleted: false },
   ]
+
+  const addTodos = value => {
+    setTodos(
+      todos.concat({
+        task: value,
+        isCompleted: false,
+      })
+    )
+  }
 
   const [todos, setTodos] = useState(holder)
 
@@ -42,9 +34,10 @@ function App() {
     setTodos(newTodos)
   }
   return (
-    <div>
+    <main id="Home">
+      <Navbar />
       <div className="todo-area">
-        <h1 className="todo-title">Todo list</h1>
+        <h1 className="todo-title">To-do list</h1>
         {todos.map((todo, index) => (
           <TodoItem
             todo={todo}
@@ -54,9 +47,16 @@ function App() {
             deleteTask={deleteTask}
           />
         ))}
+        <NewTask addTodos={addTodos} />
       </div>
-    </div>
+      <div className="timer-area">
+        <h1>Timer</h1>
+      </div>
+      <div className="music-area">
+        <h1>Music</h1>
+      </div>
+    </main>
   )
-} */
+}
 
-export default App
+export default Home
