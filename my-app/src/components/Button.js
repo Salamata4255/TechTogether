@@ -7,22 +7,24 @@ const COLORS = ['btn-blue', 'btn-darkblue', 'btn-lightpink']
 export const Button = ({
   text,
   color,
+  type,
   onClick,
   buttonStyle,
   buttonSize,
-  param,
 }) => {
   const checkButtonStyle = STYLES.includes(buttonStyle)
     ? buttonStyle
     : STYLES[0]
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0]
   const checkButtonColor = COLORS.includes(color) ? color : COLORS[0]
+  const checkType = type ? type : 'button'
 
   return (
     <>
       <button
         className={`${checkButtonStyle} ${checkButtonSize} ${checkButtonColor}`}
-        onClick={() => (param ? onClick(param) : onClick)}
+        onClick={onClick}
+        type={checkType}
       >
         {text}
       </button>

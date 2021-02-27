@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import TodoItem from '../TodoItem'
-import NewTask from '../NewTask'
 import './Home.css'
 import Navbar from '../Navbar'
+import MyModal from '../MyModal'
 
 function Home() {
   const holder = [
@@ -47,7 +47,8 @@ function Home() {
             deleteTask={deleteTask}
           />
         ))}
-        <NewTask addTodos={addTodos} />
+        {/* <NewTask addTodos={addTodos} /> */}
+        <MyModal addTodos={addTodos} />
       </div>
       <div className="timer-area">
         <h1>Timer</h1>

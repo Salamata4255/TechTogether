@@ -10,7 +10,7 @@ function TodoItem({ todo, index, completeTodo, deleteTask }) {
     >
       {todo.task}
       <div>
-        <Button onClick={completeTodo} param={index} text={'Done'} />
+        <Button onClick={() => completeTodo(index)} text={'Done'} />
         <Button text={'Start'} color={'btn-darkblue'} />
       </div>
     </div>
