@@ -17,7 +17,7 @@ function TodoItem({ todo, index, completeTodo, deleteTask }) {
           <MyModal
             title="Congratulations!"
             content="You've done a MAGNEFICENT task."
-            content="Here's a REWARD for you - sit back, enjoy your favorite snack and relax!"
+            content2="Here's a REWARD for you - sit back, enjoy your favorite snack and relax!"
             trigger="Done"
             handleTrigger={completeTodo}
             index={index}

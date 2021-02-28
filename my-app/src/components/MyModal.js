@@ -32,6 +32,7 @@ function MyModal({ title, content, trigger, handleTrigger, index, media }) {
       >
         <h2>{title}</h2>
         <p>{content}</p>
+        <p>{content2}</p>
         <img
           style={{ width: '40%', marginBottom: '10px' }}
           src={media}
