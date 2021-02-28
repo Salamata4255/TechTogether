@@ -27,6 +27,7 @@ function MyModal({ title, content,content2, trigger, handleTrigger, index, media
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
+            background: '#fbd2d7'
           },
         }}
       >
