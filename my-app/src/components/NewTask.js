@@ -32,31 +32,34 @@ function NewTask({ addTodos }) {
         style={{
           content: {
             width: '50%',
-            height: '50%',
+            height: '40%',
             margin: 'auto',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
+            background: '#ffe2e6',
+            border: '5px solid #ccc',
           },
         }}
       >
         <h2>Add new task</h2>
         <form onSubmit={handleSubmit}>
-          <label>Task:</label>
+          <label>Task: </label>
           <textarea
             type="text"
             name="name"
             value={value}
             onChange={e => setValue(e.target.value)}
           />
-          <p>
-            <b>Set Timer</b>
-          </p>
-          <label>Minute: </label>
+          <center><p>
+            <b>Set Timer 🕒</b>
+          </p></center>
+          <label>Minute:  </label>
           <input name="minutes" type="number" min="0" max="59" />
-          <label>Second: </label>
+          <label>   Second:  </label>
           <input name="seconds" type="number" min="0" max="59" />
           <br />
+          <center><h3>You got this!💪</h3></center>
           <Button text={'Submit'} type="submit" />
           <Button text={'Close'} onClick={handleCloseModal} />
         </form>

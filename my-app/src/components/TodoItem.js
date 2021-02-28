@@ -4,6 +4,7 @@ import './TodoItem.css'
 import MyModal from './MyModal'
 import dumbcat from '../images/dumbcat.jpg'
 
+
 function TodoItem({ todo, index, completeTodo, deleteTask }) {
   return (
     <div
@@ -16,8 +17,8 @@ function TodoItem({ todo, index, completeTodo, deleteTask }) {
           {/* <Button onClick={() => completeTodo(index)} text={'Done'} /> */}
           <MyModal
             title="Congratulations!😃🎉"
-            content="You've done a MAGNEFICENT task."
-            content2="Here's a REWARD for you - sit back, enjoy your favorite snack and relax!"
+            content="You've done a MAGNIFICENT task."
+            content2="Here's a REWARD for you - sit back, enjoy your favorite snack and relax!🍰"
             trigger="Done"
             handleTrigger={completeTodo}
             index={index}
