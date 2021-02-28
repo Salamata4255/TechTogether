@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/%7BTechTogether%7D/static/css/main.f487eee5.chunk.css",
-    "main.js": "/%7BTechTogether%7D/static/js/main.8cacf35f.chunk.js",
-    "main.js.map": "/%7BTechTogether%7D/static/js/main.8cacf35f.chunk.js.map",
-    "runtime-main.js": "/%7BTechTogether%7D/static/js/runtime-main.d434e209.js",
-    "runtime-main.js.map": "/%7BTechTogether%7D/static/js/runtime-main.d434e209.js.map",
-    "static/js/2.3434d00f.chunk.js": "/%7BTechTogether%7D/static/js/2.3434d00f.chunk.js",
-    "static/js/2.3434d00f.chunk.js.map": "/%7BTechTogether%7D/static/js/2.3434d00f.chunk.js.map",
-    "index.html": "/%7BTechTogether%7D/index.html",
-    "static/css/main.f487eee5.chunk.css.map": "/%7BTechTogether%7D/static/css/main.f487eee5.chunk.css.map",
-    "static/js/2.3434d00f.chunk.js.LICENSE.txt": "/%7BTechTogether%7D/static/js/2.3434d00f.chunk.js.LICENSE.txt",
-    "static/media/dumbcat.747139c2.jpg": "/%7BTechTogether%7D/static/media/dumbcat.747139c2.jpg",
-    "static/media/Home.css": "/%7BTechTogether%7D/static/media/homebg.cd45d7ae.jpg",
-    "static/media/Login.css": "/%7BTechTogether%7D/static/media/loginbg.f9e7399c.jpg",
-    "static/media/twice-feel-special-lofi-cover.839fd4ae.mp3": "/%7BTechTogether%7D/static/media/twice-feel-special-lofi-cover.839fd4ae.mp3",
-    "static/media/vinyl.831a50b4.png": "/%7BTechTogether%7D/static/media/vinyl.831a50b4.png"
+    "main.css": "/TechTogether/my-app/static/css/main.7eded842.chunk.css",
+    "main.js": "/TechTogether/my-app/static/js/main.6da226aa.chunk.js",
+    "main.js.map": "/TechTogether/my-app/static/js/main.6da226aa.chunk.js.map",
+    "runtime-main.js": "/TechTogether/my-app/static/js/runtime-main.9bf8db5a.js",
+    "runtime-main.js.map": "/TechTogether/my-app/static/js/runtime-main.9bf8db5a.js.map",
+    "static/js/2.3434d00f.chunk.js": "/TechTogether/my-app/static/js/2.3434d00f.chunk.js",
+    "static/js/2.3434d00f.chunk.js.map": "/TechTogether/my-app/static/js/2.3434d00f.chunk.js.map",
+    "index.html": "/TechTogether/my-app/index.html",
+    "static/css/main.7eded842.chunk.css.map": "/TechTogether/my-app/static/css/main.7eded842.chunk.css.map",
+    "static/js/2.3434d00f.chunk.js.LICENSE.txt": "/TechTogether/my-app/static/js/2.3434d00f.chunk.js.LICENSE.txt",
+    "static/media/dumbcat.747139c2.jpg": "/TechTogether/my-app/static/media/dumbcat.747139c2.jpg",
+    "static/media/Home.css": "/TechTogether/my-app/static/media/homebg.cd45d7ae.jpg",
+    "static/media/Login.css": "/TechTogether/my-app/static/media/loginbg.f9e7399c.jpg",
+    "static/media/twice-feel-special-lofi-cover.839fd4ae.mp3": "/TechTogether/my-app/static/media/twice-feel-special-lofi-cover.839fd4ae.mp3",
+    "static/media/vinyl.831a50b4.png": "/TechTogether/my-app/static/media/vinyl.831a50b4.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.d434e209.js",
+    "static/js/runtime-main.9bf8db5a.js",
     "static/js/2.3434d00f.chunk.js",
-    "static/css/main.f487eee5.chunk.css",
-    "static/js/main.8cacf35f.chunk.js"
+    "static/css/main.7eded842.chunk.css",
+    "static/js/main.6da226aa.chunk.js"
   ]
 }
