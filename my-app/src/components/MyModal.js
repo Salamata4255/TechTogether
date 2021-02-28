@@ -3,7 +3,7 @@ import Modal from 'react-modal'
 import { Button } from './Button'
 
 Modal.setAppElement('#root')
-function MyModal({ title, content, trigger, handleTrigger, index, media }) {
+function MyModal({ title, content,content2, trigger, handleTrigger, index, media }) {
   const [modalIsOpen, setModal] = useState(false)
   const handleOpenModal = () => {
     setModal(true)
@@ -27,11 +27,13 @@ function MyModal({ title, content, trigger, handleTrigger, index, media }) {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
+            background: '#fbd2d7'
           },
         }}
       >
         <h2>{title}</h2>
         <p>{content}</p>
+        <p>{content2}</p>
         <img
           style={{ width: '40%', marginBottom: '10px' }}
           src={media}
