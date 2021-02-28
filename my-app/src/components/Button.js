@@ -3,7 +3,7 @@ import './Button.css'
 import { Link } from 'react-router-dom'
 
 const STYLES = ['btn-primary', 'btn-outline']
-const SIZES = ['btn-medium', 'btn-large']
+const SIZES = ['btn-medium', 'btn-large', '']
 const COLORS = ['btn-blue', 'btn-darkblue', 'btn-lightpink', 'btn-lilac']
 export const Button = ({
   text,
@@ -24,7 +24,18 @@ export const Button = ({
 
   return (
     <>
-      <Link to={dest}>
+      {dest ? (
+        <Link to={dest}>
+          <button
+            className={`${checkButtonStyle} ${checkButtonSize} ${checkButtonColor}`}
+            onClick={onClick}
+            type={checkType}
+          >
+            <i className={icon ? icon : null} />
+            {text}
+          </button>
+        </Link>
+      ) : (
         <button
           className={`${checkButtonStyle} ${checkButtonSize} ${checkButtonColor}`}
           onClick={onClick}
@@ -33,7 +44,7 @@ export const Button = ({
           <i className={icon ? icon : null} />
           {text}
         </button>
-      </Link>
+      )}
     </>
   )
 }

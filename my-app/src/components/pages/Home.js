@@ -12,6 +12,7 @@ function Home() {
   const holder = [
     { task: 'Learn React', isCompleted: false },
     { task: 'Learn CSS', isCompleted: false },
+    { task: 'Do Math hw', isCompleted: false },
     { task: 'Read a book', isCompleted: false },
     { task: 'Workout', isCompleted: false },
   ]
@@ -66,11 +67,12 @@ function Home() {
               autoPlay
               controls
               loop
-              style={{ width: '60%', marginTop: '2px' }}
+              style={{ width: '70%', marginTop: '2px' }}
             />
           </div>
           <div className="timer-area">
-            <h1>timer</h1>
+            <h1>Timer ⏳</h1>
+            <p>Imagine a timer counting down here...</p>
           </div>
         </div>
       </div>

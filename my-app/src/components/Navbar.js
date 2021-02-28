@@ -33,7 +33,7 @@ export default function Navbar() {
             </li>
           </ul>
           <div className="endday">
-            <Button buttonStyle="btn-outline" text={'End day'} />
+            <Button buttonStyle="btn-outline" buttonSize="" text={'End day'} />
           </div>
         </div>
       </nav>

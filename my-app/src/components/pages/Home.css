@@ -27,8 +27,7 @@
 
 .timer-area {
   width: 50%;
-  height: 100px;
-  background-color: blue;
+  background-color: #a2d2ff;
 }
 
 .todo-area {
@@ -62,8 +61,8 @@
   width: 50px;
   height: 50px;
   overflow: hidden;
-  -webkit-animation: spin 2s linear infinite; /* Safari */
-  animation: spin 2s linear infinite;
+  -webkit-animation: spin 4s linear infinite; /* Safari */
+  animation: spin 4s linear infinite;
 }
 
 @keyframes spin {

@@ -29,12 +29,24 @@
   margin-right: 15px;
   background-color: transparent;
   color: black;
+  padding: 1.25em 2em;
+  font-size: 0.7em;
+  transition: all 0.25s;
 }
 .btn-medium {
   padding: 8px 20px;
   font-size: 16px;
+  transition: all 0.25s;
 }
 .btn-large {
   padding: 12px 26px;
   font-size: 20px;
+  transition: all 0.25s;
+}
+
+.btn-outline:hover,
+.btn-medium:hover,
+.btn-large:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.25em);
 }

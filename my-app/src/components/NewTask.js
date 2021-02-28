@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Modal from 'react-modal'
 import { Button } from './Button'
+import '../App.css'
 
 Modal.setAppElement('#root')
 function NewTask({ addTodos }) {
@@ -25,7 +26,7 @@ function NewTask({ addTodos }) {
   return (
     <div>
       <div onClick={handleOpenModal}>
-        <p>Let's add a new task...</p>
+        <p id="newtask">Let's add a new task...</p>
       </div>
       <Modal
         isOpen={modalIsOpen}
@@ -51,15 +52,19 @@ function NewTask({ addTodos }) {
             value={value}
             onChange={e => setValue(e.target.value)}
           />
-          <center><p>
-            <b>Set Timer 🕒</b>
-          </p></center>
-          <label>Minute:  </label>
+          <center>
+            <p>
+              <b>Set Timer 🕒</b>
+            </p>
+          </center>
+          <label>Minute: </label>
           <input name="minutes" type="number" min="0" max="59" />
-          <label>   Second:  </label>
+          <label> Second: </label>
           <input name="seconds" type="number" min="0" max="59" />
           <br />
-          <center><h3>You got this!💪</h3></center>
+          <center>
+            <h3>You got this!💪</h3>
+          </center>
           <Button text={'Submit'} type="submit" />
           <Button text={'Close'} onClick={handleCloseModal} />
         </form>
