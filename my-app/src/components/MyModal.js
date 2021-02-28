@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Modal from 'react-modal'
 import { Button } from './Button'
 
+
 Modal.setAppElement('#root')
 function MyModal({ title, content,content2, trigger, handleTrigger, index, media }) {
   const [modalIsOpen, setModal] = useState(false)
@@ -22,12 +23,13 @@ function MyModal({ title, content,content2, trigger, handleTrigger, index, media
         style={{
           content: {
             width: '50%',
-            height: '60%',
+            height: '65%',
             margin: 'auto',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            background: '#fbd2d7'
+            background: '#ffe2e6',
+            border: '5px solid #ccc',
           },
         }}
       >
