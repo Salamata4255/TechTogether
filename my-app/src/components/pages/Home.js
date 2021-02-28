@@ -3,6 +3,9 @@ import TodoItem from '../TodoItem'
 import './Home.css'
 import Navbar from '../Navbar'
 import NewTask from '../NewTask'
+import ReactAudioPlayer from 'react-audio-player'
+/* import Breakfast_Alone from '../../images/Breakfast_Alone.mp3' */
+import Feel_Special from '../../images/twice-feel-special-lofi-cover.ogg'
 
 function Home() {
   const holder = [
@@ -55,6 +58,7 @@ function Home() {
       </div>
       <div className="music-area">
         <h1>Music</h1>
+        <ReactAudioPlayer src={Feel_Special} autoPlay controls />
       </div>
     </main>
   )
