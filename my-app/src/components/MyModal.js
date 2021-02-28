@@ -3,7 +3,7 @@ import Modal from 'react-modal'
 import { Button } from './Button'
 
 Modal.setAppElement('#root')
-function MyModal({ title, content, trigger, handleTrigger, index, media }) {
+function MyModal({ title, content,content2, trigger, handleTrigger, index, media }) {
   const [modalIsOpen, setModal] = useState(false)
   const handleOpenModal = () => {
     setModal(true)
