@@ -5,13 +5,15 @@ import Navbar from '../Navbar'
 import NewTask from '../NewTask'
 import ReactAudioPlayer from 'react-audio-player'
 /* import Breakfast_Alone from '../../images/Breakfast_Alone.mp3' */
-import Feel_Special from '../../images/twice-feel-special-lofi-cover.ogg'
+import Feel_Special from '../../images/twice-feel-special-lofi-cover.mp3'
+import vinyl from '../../images/vinyl.png'
 
 function Home() {
   const holder = [
     { task: 'Learn React', isCompleted: false },
     { task: 'Learn CSS', isCompleted: false },
     { task: 'Read a book', isCompleted: false },
+    { task: 'Workout', isCompleted: false },
   ]
 
   const addTodos = value => {
@@ -39,26 +41,38 @@ function Home() {
   return (
     <main id="Home">
       <Navbar />
-      <div className="todo-area">
-        <h1 className="todo-title">To-do list</h1>
-        {todos.map((todo, index) => (
-          <TodoItem
-            todo={todo}
-            key={index}
-            index={index}
-            completeTodo={completeTodo}
-            deleteTask={deleteTask}
-          />
-        ))}
+      <div className="container">
+        <div className="todo-area">
+          <h1 className="todo-title">To-do list</h1>
+          {todos.map((todo, index) => (
+            <TodoItem
+              todo={todo}
+              key={index}
+              index={index}
+              completeTodo={completeTodo}
+              deleteTask={deleteTask}
+            />
+          ))}
 
-        <NewTask addTodos={addTodos} />
-      </div>
-      <div className="timer-area">
-        <h1>Timer</h1>
-      </div>
-      <div className="music-area">
-        <h1>Music</h1>
-        <ReactAudioPlayer src={Feel_Special} autoPlay controls />
+          <NewTask addTodos={addTodos} />
+        </div>
+        <div className="music-area">
+          <div className="player">
+            <div className="vini">
+              <img src={vinyl} alt="cd" className="vinyl" />
+            </div>
+            <ReactAudioPlayer
+              src={Feel_Special}
+              autoPlay
+              controls
+              loop
+              style={{ width: '60%', marginTop: '2px' }}
+            />
+          </div>
+          <div className="timer-area">
+            <h1>timer</h1>
+          </div>
+        </div>
       </div>
     </main>
   )

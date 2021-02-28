@@ -22,8 +22,13 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
+              <Link to="/about" className="nav-links" onClick={closeMenu}>
+                About us
+              </Link>
+            </li>
+            <li className="nav-item">
               <Link to="/logout" className="nav-links" onClick={closeMenu}>
-                Loggout
+                Logout
               </Link>
             </li>
           </ul>
