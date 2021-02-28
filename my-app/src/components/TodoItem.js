@@ -15,7 +15,7 @@ function TodoItem({ todo, index, completeTodo, deleteTask }) {
         <div className="button-areas">
           {/* <Button onClick={() => completeTodo(index)} text={'Done'} /> */}
           <MyModal
-            title="Congratulations!"
+            title="Congratulations!😃🎉"
             content="You've done a MAGNEFICENT task."
             content2="Here's a REWARD for you - sit back, enjoy your favorite snack and relax!"
             trigger="Done"
