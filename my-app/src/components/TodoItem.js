@@ -2,6 +2,7 @@ import React from 'react'
 import { Button } from './Button'
 import './TodoItem.css'
 import MyModal from './MyModal'
+import dumbcat from '../images/dumbcat.jpg'
 
 function TodoItem({ todo, index, completeTodo, deleteTask }) {
   return (
@@ -19,6 +20,7 @@ function TodoItem({ todo, index, completeTodo, deleteTask }) {
             trigger="Done"
             handleTrigger={completeTodo}
             index={index}
+            media={dumbcat}
           />
         </div>
         <div className="button-areas">
